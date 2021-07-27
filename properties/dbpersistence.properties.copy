@@ -1,0 +1,26 @@
+title.default=LIGHT AND EASY
+driver.default=org.postgresql.Driver
+dialect.default=org.hibernate.dialect.PostgreSQLDialect
+user.default=postgres
+password.default=sbahrin1234
+url.default=jdbc:postgresql://localhost:5432/demodb
+
+
+
+title.default=LIGHT AND EASY
+driver.default=com.mysql.cj.jdbc.Driver
+dialect.default=org.hibernate.dialect.MySQL5InnoDBDialect
+user.default=root
+password.default=sbahrin1234
+url.default=jdbc:mysql://localhost:3307/demodb
+
+
+
+title.default=LIGHT AND EASY
+driver.default=org.h2.Driver
+dialect.default=org.hibernate.dialect.H2Dialect
+user.default=sa
+password.default=
+url.default=jdbc:h2:file:~/h2db/demodb
+
+

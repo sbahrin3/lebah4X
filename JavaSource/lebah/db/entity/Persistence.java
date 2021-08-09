@@ -68,20 +68,10 @@ public class Persistence {
 	
 	
 	public synchronized static Persistence db(HttpServletRequest request) throws Exception {
-		
 		String key = (String) request.getSession().getAttribute("_ref_key");
-		if ( key == null || "null".equals(key) ) {
-			key = "";
-		}
-		
-		if ( "".equals(key) || key.length() == 0 ) {
-			
-			key = "default";
-			
-		}
-				
+		if ( key == null || "null".equals(key) ) key = "";
+		if ( "".equals(key) || key.length() == 0 ) key = "default";
 		return db(key);
-		
 	}
 	
 	public synchronized static Persistence db(String key) throws Exception {
